@@ -1,2 +1,6 @@
-<h1>App#index</h1>
-<p><%= @court[:name] %></p>
+<%= form_tag projects_path, :method => 'get' do %> <%#　projects_pathはモデル名で読みかえること %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>

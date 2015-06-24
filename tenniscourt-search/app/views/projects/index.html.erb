@@ -1,0 +1,28 @@
+<table>
+  <form method="post" action="/project">
+  <tr><th>FIND:</th><td><input type="text" name="fstr"></td></tr>
+  <tr><th></th><td><input type="submit" value="送信"></td></tr>
+  </form>
+</table>
+
+<hr />
+検索ワード：<%= @word %><br/>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>PV</th>
+    <th>URL</th>
+    </tr>
+  <% @datas.each do |data| %>
+  <tr>
+    <td><%= data.id %></td>
+    <td><%= data.name %></td>
+    <td><%= data.pv %></td>
+    <td><%= data.url %></td>
+  </tr>
+  <% end %>
+</table>
+
+<hr />
+<a href="/bloggers/index"> << index </a>
