@@ -5,10 +5,3 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
-@court = Court.new
-@court.name    = '東綾瀬公園庭球場'
-@court.address = '東京都足立区東綾瀬３丁目４－１'
-@court.postal  = 1200004
-@court.tel     = 0336050005
-@court.save
