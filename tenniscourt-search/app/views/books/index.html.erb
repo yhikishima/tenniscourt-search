@@ -28,10 +28,10 @@
 
 <%= link_to 'New Book', new_book_path %>
 
-<%#　以下をScaffoldingしたindex.html.erbに追記する %>
-<%= form_tag Book, :method => 'get' do %> <%#　projects_pathはモデル名で読みかえること %>
+<%= form_tag Book, :method => 'get' do %>
   <p>
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search", :name => nil %>
+
   </p>
 <% end %>
