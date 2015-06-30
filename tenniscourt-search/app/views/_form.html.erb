@@ -1,0 +1,9 @@
+<%= form_for(@topic) do |f| %>
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.select :user_id, User.all.map { |u| [u.name, u.id] } %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

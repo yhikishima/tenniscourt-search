@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+  resources :people
   resources :books
   root 'books#index'
   get 'app/index'
 
   get 'court/index'
   get 'projects/index'
+  get 'products/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
